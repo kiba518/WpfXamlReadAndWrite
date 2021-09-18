@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfXamlReadAndWrite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfXamlReadAndWrite"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="579.721" Width="800">
+    <Grid>
+        <Button Name="btnWrite" Click="BtnWrite_Click" Content="写" HorizontalAlignment="Left" Margin="40,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="tbXaml" HorizontalAlignment="Left" Height="120" Margin="40,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="704"/>
+        <Button x:Name="btnSave" Click="BtnSave_Click" Content="保存" HorizontalAlignment="Left" Margin="130,30,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnRead" Click="BtnRead_Click" Content="读" HorizontalAlignment="Left" Margin="40,201,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="tbXamlRead" HorizontalAlignment="Left" Height="120" Margin="40,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="704"/>
+        <Button x:Name="btnShowParse" Click="BtnShowParse_Click" Content="展示(Parse)" HorizontalAlignment="Left" Margin="40,376,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnShowLoad" Click="BtnShowLoad_Click" Content="展示(Load)" HorizontalAlignment="Left" Margin="130,376,0,0" VerticalAlignment="Top" Width="75"/>
+        <StackPanel Name="spCon" Orientation="Horizontal" HorizontalAlignment="Left" Height="100" Margin="40,413,0,0" VerticalAlignment="Top" Width="704" Background="DarkKhaki"/>
+
+    </Grid>
+</Window>
